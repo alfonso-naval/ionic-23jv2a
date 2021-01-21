@@ -1,11 +1,11 @@
 ion-content {
-  background: linear-gradient(to bottom,#ffffff , #6dd5fa, #418fc3);
+  background: linear-gradient(to bottom,#ffffff , #6dd5fa, #2980b9);
 }
 h2 {
-  color: #000000;
-  text-align:center;
+  color: #070606;
+  text-align: center;
 }
 p {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: justify;
+  text-align: center;
 }
