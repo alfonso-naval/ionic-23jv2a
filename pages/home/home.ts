@@ -10,10 +10,10 @@ export class HomePage {
   feet: number;
   fttoinch: number;
   inches: number;
-  rdesired: number;
-  mdesired: number;
-  hdesired: number;
-  ddesired: number;
+  robinsons: number;
+  miller: number;
+  hamwi: number;
+  devine: number;
   sex: string;
   pmessage: string;
     
