@@ -1,0 +1,47 @@
+
+<ion-content padding>
+  <h2>IDEAL WEIGHT CALCULATOR</h2>
+  <p> Welcome to the Ideal Weight Calculator! by Don't wait just lose weight! Co.
+     To use this calculator, simply enter your gender, weight, and height. This will then give you an ideal weight range.
+
+  </p>
+  Source: <a href="https://www.omnicalculator.com/health/ideal-weight#how-much-should-i-weight">https://www.omnicalculator.com/health/ideal-weight#how-much-should-i-weight</a>
+
+  <ion-item>
+    <ion-label color="dark"> Gender: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="sex">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+    </ion-select>
+</ion-item>
+
+  <ion-item>
+    <ion-label color="dark"> Height in Feet:</ion-label>
+    <ion-input type="number" [(ngModel)]="feet"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark"> Height in Inches:</ion-label>
+    <ion-input type="number" [(ngModel)]="inches"></ion-input>
+  </ion-item>
+  <p> 
+   
+  <button ion-button color="primary" (click)="calculatedesired()">
+    Calculate
+  </button>
+  <p> 
+    The Don't wait just lose weight! Co. is a company that is focused on providing the public with free health and fitness information. This company  provides free nutrition tips.
+
+    <img src = "https://cdn.jsdelivr.net/gh/Group3Emtec2021/Ideal-Weight-Calculator@2021-19-01_16-15/Free_Sample_By_Wix%20(2).jpg">
+
+    <p> Don't be shy! If you need help or have any questions check out our about page so you can book a consultation with one of our experts! 
+
+  <ion-item *ngIf="rdesired">
+    <h2>Ideal Weight Calculator:</h2>
+    <h2>Robinson: {{rdesired}} {{pmessage}} </h2>
+    <h2>Miller: {{mdesired}} {{pmessage}} </h2>
+    <h2>Hamwi: {{hdesired}} {{pmessage}}</h2>
+    <h2>Devine: {{ddesired}} {{pmessage}}</h2>
+  </ion-item>
+
+</ion-content>
